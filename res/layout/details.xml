@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+
+	<TextView android:id="@+id/labelName" android:layout_width="wrap_content"
+		android:textAppearance="?android:attr/textAppearanceLarge"
+		android:layout_height="wrap_content"></TextView>
+
+	<TextView android:text="@string/labelFacebook"
+		android:layout_width="wrap_content" android:layout_height="wrap_content" />
+	<TextView android:id="@+id/label_fb" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" />
+
+	<TextView android:text="@string/labelTwitter"
+		android:layout_width="wrap_content" android:layout_height="wrap_content" />
+	<TextView android:id="@+id/label_twitter"
+		android:layout_width="wrap_content" android:layout_height="wrap_content" />
+
+	<TextView android:text="@string/labelBirthday"
+		android:layout_width="wrap_content" android:layout_height="wrap_content" />
+	<TextView android:id="@+id/label_brithday"
+		android:layout_width="wrap_content" android:layout_height="wrap_content" />
+
+	<TextView android:text="@string/labelLocation"
+		android:layout_width="wrap_content" android:layout_height="wrap_content" />
+	<TextView android:id="@+id/label_location"
+		android:layout_width="wrap_content" android:layout_height="wrap_content" />
+
+	<TextView android:text="@string/labelOccupation"
+		android:layout_width="wrap_content" android:layout_height="wrap_content" />
+	<TextView android:id="@+id/label_Occupation"
+		android:layout_width="wrap_content" android:layout_height="wrap_content" />
+
+	<TextView android:text="@string/labelInterest"
+		android:layout_width="wrap_content" android:layout_height="wrap_content" />
+	<TextView android:id="@+id/label_Interest"
+		android:layout_width="wrap_content" android:layout_height="wrap_content" />
+
+	<TextView android:text="@string/labelCute"
+		android:layout_width="wrap_content" android:layout_height="wrap_content" />
+	<TextView android:id="@+id/label_Cute" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" />
+
+	<TextView android:text="@string/labelFollow"
+		android:layout_width="wrap_content" android:layout_height="wrap_content" />
+
+	<TextView android:id="@+id/label_Follow" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" />
+
+
+</LinearLayout>

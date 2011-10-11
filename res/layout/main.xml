@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:background="@color/putih" android:layout_height="fill_parent">
+	<ImageView android:layout_width="wrap_content"
+		android:paddingLeft="10px" android:layout_height="wrap_content"
+		android:src="@drawable/logo"></ImageView>
+	<TextView android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:id="@+id/main_nama" />
+	<ImageView android:layout_width="wrap_content"
+		android:scaleType="center" android:layout_height="wrap_content"
+		android:id="@+id/image"></ImageView>
+
+</LinearLayout>

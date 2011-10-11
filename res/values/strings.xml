@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="hello">Hello World, MainActivity!</string>
+	<string name="app_name">UpdaTerus.com</string>
+	<string name="menu_about">About</string>
+	<string name="menu_details">Details</string>
+	<string name="menu_beaty_week">Beauty of the week</string>
+	<string name="labelFacebook">Facebook</string>
+	<string name="labelTwitter">Twitter</string>
+	<string name="labelBirthday">Birthday</string>
+	<string name="labelLocation">Location</string>
+	<string name="labelOccupation">Occupation</string>
+	<string name="labelInterest">Interest</string>
+	<string name="labelCute">Vote cute</string>
+	<string name="labelFollow">Followers</string>
+
+</resources>
