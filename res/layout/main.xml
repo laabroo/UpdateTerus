@@ -1,14 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
 	android:orientation="vertical" android:layout_width="fill_parent"
-	android:background="@color/putih" android:layout_height="fill_parent">
-	<ImageView android:layout_width="wrap_content"
-		android:paddingLeft="10px" android:layout_height="wrap_content"
-		android:src="@drawable/logo"></ImageView>
-	<TextView android:layout_width="wrap_content"
-		android:layout_height="wrap_content" android:id="@+id/main_nama" />
-	<ImageView android:layout_width="wrap_content"
-		android:scaleType="center" android:layout_height="wrap_content"
+	android:background="@color/hitam" android:layout_height="fill_parent">
+	<ImageView android:layout_width="fill_parent"
+		android:background="@color/putih" android:paddingLeft="5px"
+		android:layout_height="wrap_content" android:src="@drawable/logo"></ImageView>
+	<!--<TextView android:id="@+id/name_" android:layout_width="fill_parent" 
+		android:textColor="@color/putih" android:text="@string/updaterus" android:layout_height="wrap_content" 
+		android:textStyle="bold" android:textSize="18sp" /> -->
+
+	<View android:layout_width="fill_parent" android:layout_height="2dip"
+		android:background="@color/merah"></View>
+	<TextView android:id="@+id/name_" android:layout_width="fill_parent"
+		android:textColor="@color/putih" android:layout_height="wrap_content"
+		android:textStyle="bold" android:textSize="18sp" />
+	<ImageView android:layout_width="fill_parent" 
+		android:scaleType="centerCrop" android:layout_height="fill_parent"
 		android:id="@+id/image"></ImageView>
 
 </LinearLayout>

@@ -6,47 +6,62 @@
 	<TextView android:id="@+id/labelName" android:layout_width="wrap_content"
 		android:textAppearance="?android:attr/textAppearanceLarge"
 		android:layout_height="wrap_content"></TextView>
+	<TableLayout android:layout_height="wrap_content"
+		android:layout_width="wrap_content" android:stretchColumns="*">
+		<TableRow>
 
-	<TextView android:text="@string/labelFacebook"
-		android:layout_width="wrap_content" android:layout_height="wrap_content" />
-	<TextView android:id="@+id/label_fb" android:layout_width="wrap_content"
-		android:layout_height="wrap_content" />
+			<TextView android:text="@string/labelFacebook"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:layout_weight="1" />
+			<Button android:id="@+id/btn_fb" android:layout_width="32px"
+				android:layout_height="32px" android:background="@drawable/facebook32"
+				android:layout_weight="1" android:layout_gravity="right" />
 
-	<TextView android:text="@string/labelTwitter"
-		android:layout_width="wrap_content" android:layout_height="wrap_content" />
-	<TextView android:id="@+id/label_twitter"
-		android:layout_width="wrap_content" android:layout_height="wrap_content" />
+		</TableRow>
+		<TableRow>
+			<TextView android:text="@string/labelTwitter"
+				android:layout_width="wrap_content" android:layout_height="wrap_content" />
+			<Button android:id="@+id/btn_twitter" android:layout_width="32px"
+				android:layout_height="32px" android:background="@drawable/logo_twitter"
+				android:layout_weight="1" android:layout_gravity="right" />
 
-	<TextView android:text="@string/labelBirthday"
-		android:layout_width="wrap_content" android:layout_height="wrap_content" />
-	<TextView android:id="@+id/label_brithday"
-		android:layout_width="wrap_content" android:layout_height="wrap_content" />
+		</TableRow>
+		<TableRow>
+			<TextView android:text="@string/labelBirthday"
+				android:layout_width="wrap_content" android:layout_height="wrap_content" />
+			<TextView android:id="@+id/label_brithday"
+				android:layout_width="wrap_content" android:layout_height="wrap_content" />
+		</TableRow>
+		<TableRow>
+			<TextView android:text="@string/labelLocation"
+				android:layout_width="wrap_content" android:layout_height="wrap_content" />
+			<TextView android:id="@+id/label_location"
+				android:layout_width="wrap_content" android:layout_height="wrap_content" />
+		</TableRow>
+		<TableRow>
+			<TextView android:text="@string/labelOccupation"
+				android:layout_width="wrap_content" android:layout_height="wrap_content" />
+			<TextView android:id="@+id/label_Occupation"
+				android:layout_width="wrap_content" android:layout_height="wrap_content" />
+		</TableRow>
+		<TableRow>
+			<TextView android:text="@string/labelInterest"
+				android:layout_width="wrap_content" android:layout_height="wrap_content" />
+			<TextView android:id="@+id/label_Interest"
+				android:layout_width="wrap_content" android:layout_height="wrap_content" />
+		</TableRow>
+		<TableRow>
+			<TextView android:text="@string/labelCute"
+				android:layout_width="wrap_content" android:layout_height="wrap_content" />
+			<TextView android:id="@+id/label_Cute" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" />
+		</TableRow>
+		<TableRow>
+			<TextView android:text="@string/labelFollow"
+				android:layout_width="wrap_content" android:layout_height="wrap_content" />
 
-	<TextView android:text="@string/labelLocation"
-		android:layout_width="wrap_content" android:layout_height="wrap_content" />
-	<TextView android:id="@+id/label_location"
-		android:layout_width="wrap_content" android:layout_height="wrap_content" />
-
-	<TextView android:text="@string/labelOccupation"
-		android:layout_width="wrap_content" android:layout_height="wrap_content" />
-	<TextView android:id="@+id/label_Occupation"
-		android:layout_width="wrap_content" android:layout_height="wrap_content" />
-
-	<TextView android:text="@string/labelInterest"
-		android:layout_width="wrap_content" android:layout_height="wrap_content" />
-	<TextView android:id="@+id/label_Interest"
-		android:layout_width="wrap_content" android:layout_height="wrap_content" />
-
-	<TextView android:text="@string/labelCute"
-		android:layout_width="wrap_content" android:layout_height="wrap_content" />
-	<TextView android:id="@+id/label_Cute" android:layout_width="wrap_content"
-		android:layout_height="wrap_content" />
-
-	<TextView android:text="@string/labelFollow"
-		android:layout_width="wrap_content" android:layout_height="wrap_content" />
-
-	<TextView android:id="@+id/label_Follow" android:layout_width="wrap_content"
-		android:layout_height="wrap_content" />
-
-
+			<TextView android:id="@+id/label_Follow"
+				android:layout_width="wrap_content" android:layout_height="wrap_content" />
+		</TableRow>
+	</TableLayout>
 </LinearLayout>

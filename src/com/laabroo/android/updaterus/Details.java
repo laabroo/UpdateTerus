@@ -8,7 +8,12 @@ import com.laabroo.android.updaterus.network.GetData;
 import android.app.Activity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
+import android.view.ViewGroup.LayoutParams;
+import android.webkit.WebView;
+import android.widget.Button;
 import android.widget.TextView;
+import android.view.View.OnClickListener;
 
 public class Details extends Activity {
 	private GetData getData;
@@ -25,8 +30,8 @@ public class Details extends Activity {
 	private String follow;
 
 	private TextView valueName;
-	private TextView valueFB;
-	private TextView valueTwitter;
+	private Button btnFB;
+	private Button btnTwitter;
 	private TextView valueLocation;
 	private TextView valueOccupation;
 	private TextView valueInterest;
@@ -38,9 +43,10 @@ public class Details extends Activity {
 		super.onCreate(bundle);
 		setContentView(R.layout.details);
 
+		btnFB = (Button) findViewById(R.id.btn_fb);
+		btnTwitter = (Button) findViewById(R.id.btn_twitter);
+
 		valueName = (TextView) findViewById(R.id.labelName);
-		valueFB = (TextView) findViewById(R.id.label_fb);
-		valueTwitter = (TextView) findViewById(R.id.label_twitter);
 		valueInterest = (TextView) findViewById(R.id.label_Interest);
 		valueOccupation = (TextView) findViewById(R.id.label_Occupation);
 		valueLocation = (TextView) findViewById(R.id.label_location);
@@ -76,18 +82,35 @@ public class Details extends Activity {
 			follow = jsonObject.getString("follow");
 
 			valueName.setText(first_name + " " + last_name);
-			valueFB.setText(facebook);
+			// valueFB.setText(facebook);
 			valueInterest.setText(interest);
 			valueLocation.setText(location);
 			valueOccupation.setText(occupation);
-			valueTwitter.setText(twitter);
+			// valueTwitter.setText(twitter);
 			valueBirthDay.setText(birthday);
 			valueCute.setText(cute);
 			valueFollow.setText(follow);
 
-			Log.i(TAG, valueName + " " + valueFB + valueCute + valueFollow
-					+ valueInterest + valueLocation + valueOccupation
-					+ valueTwitter);
+			btnFB.setOnClickListener(new OnClickListener() {
+
+				@Override
+				public void onClick(View arg0) {
+					goBrowser(facebook);
+
+				}
+			});
+
+			btnTwitter.setOnClickListener(new OnClickListener() {
+
+				@Override
+				public void onClick(View arg0) {
+					goBrowser(twitter);
+
+				}
+			});
+
+			Log.i(TAG, valueName + " " + facebook + valueCute + valueFollow
+					+ valueInterest + valueLocation + valueOccupation + twitter);
 			// }
 			// } catch (JSONException e) {
 			// Log.i(TAG, e.getMessage());
@@ -95,6 +118,14 @@ public class Details extends Activity {
 		} catch (Exception e) {
 			Log.i(TAG, e.getMessage());
 		}
+
+	}
+
+	private void goBrowser(String url) {
+		WebView webView = new WebView(this);
+		webView.setLayoutParams(new LayoutParams(LayoutParams.FILL_PARENT,
+				LayoutParams.FILL_PARENT));
+		webView.loadUrl(url);
 
 	}
 }

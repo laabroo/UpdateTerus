@@ -20,11 +20,6 @@ public class GetData {
 	private static final String TAG = "GetData";
 	HttpURLConnection connection = null;
 
-
-	public GetData() {
-		// TODO Auto-generated constructor stub
-	}
-
 	public String loadData() {
 		Calendar calendar = Calendar.getInstance();
 		calendar.setTimeZone(TimeZone.getDefault());
